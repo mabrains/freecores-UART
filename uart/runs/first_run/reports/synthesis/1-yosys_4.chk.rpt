@@ -1,0 +1,39 @@
+
+28. Executing CHECK pass (checking for obvious problems).
+checking module uart..
+Warning: Wire uart.\uart_tx is used but has no driver.
+Warning: Wire uart.\tx_irq is used but has no driver.
+Warning: Wire uart.\rx_irq is used but has no driver.
+Warning: Wire uart.\csr_do [31] is used but has no driver.
+Warning: Wire uart.\csr_do [30] is used but has no driver.
+Warning: Wire uart.\csr_do [29] is used but has no driver.
+Warning: Wire uart.\csr_do [28] is used but has no driver.
+Warning: Wire uart.\csr_do [27] is used but has no driver.
+Warning: Wire uart.\csr_do [26] is used but has no driver.
+Warning: Wire uart.\csr_do [25] is used but has no driver.
+Warning: Wire uart.\csr_do [24] is used but has no driver.
+Warning: Wire uart.\csr_do [23] is used but has no driver.
+Warning: Wire uart.\csr_do [22] is used but has no driver.
+Warning: Wire uart.\csr_do [21] is used but has no driver.
+Warning: Wire uart.\csr_do [20] is used but has no driver.
+Warning: Wire uart.\csr_do [19] is used but has no driver.
+Warning: Wire uart.\csr_do [18] is used but has no driver.
+Warning: Wire uart.\csr_do [17] is used but has no driver.
+Warning: Wire uart.\csr_do [16] is used but has no driver.
+Warning: Wire uart.\csr_do [15] is used but has no driver.
+Warning: Wire uart.\csr_do [14] is used but has no driver.
+Warning: Wire uart.\csr_do [13] is used but has no driver.
+Warning: Wire uart.\csr_do [12] is used but has no driver.
+Warning: Wire uart.\csr_do [11] is used but has no driver.
+Warning: Wire uart.\csr_do [10] is used but has no driver.
+Warning: Wire uart.\csr_do [9] is used but has no driver.
+Warning: Wire uart.\csr_do [8] is used but has no driver.
+Warning: Wire uart.\csr_do [7] is used but has no driver.
+Warning: Wire uart.\csr_do [6] is used but has no driver.
+Warning: Wire uart.\csr_do [5] is used but has no driver.
+Warning: Wire uart.\csr_do [4] is used but has no driver.
+Warning: Wire uart.\csr_do [3] is used but has no driver.
+Warning: Wire uart.\csr_do [2] is used but has no driver.
+Warning: Wire uart.\csr_do [1] is used but has no driver.
+Warning: Wire uart.\csr_do [0] is used but has no driver.
+found and reported 35 problems.

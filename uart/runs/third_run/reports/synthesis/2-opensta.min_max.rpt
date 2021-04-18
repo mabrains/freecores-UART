@@ -1,0 +1,77 @@
+Startpoint: _0983_ (rising edge-triggered flip-flop clocked by sys_clk)
+Endpoint: _0982_ (rising edge-triggered flip-flop clocked by sys_clk)
+Path Group: sys_clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock sys_clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _0983_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.02    0.17    0.17 ^ _0983_/Q (sky130_fd_sc_hd__dfxtp_2)
+     1    0.00                           transceiver.uart_rx1 (net)
+                  0.02    0.00    0.17 ^ _0982_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  0.17   data arrival time
+
+                  0.00    0.00    0.00   clock sys_clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ _0982_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.02   -0.02   library hold time
+                                 -0.02   data required time
+-----------------------------------------------------------------------------
+                                 -0.02   data required time
+                                 -0.17   data arrival time
+-----------------------------------------------------------------------------
+                                  0.19   slack (MET)
+
+
+Startpoint: csr_a[13] (input port clocked by sys_clk)
+Endpoint: _0986_ (rising edge-triggered flip-flop clocked by sys_clk)
+Path Group: sys_clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock sys_clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.01    0.00    2.00 v csr_a[13] (in)
+     1    0.00                           csr_a[13] (net)
+                  0.01    0.00    2.00 v _0477_/A (sky130_fd_sc_hd__nor2_2)
+                  0.23    0.23    2.23 ^ _0477_/Y (sky130_fd_sc_hd__nor2_2)
+     3    0.01                           _0159_ (net)
+                  0.23    0.00    2.23 ^ _0478_/B (sky130_fd_sc_hd__nand3_2)
+                  0.14    0.22    2.46 v _0478_/Y (sky130_fd_sc_hd__nand3_2)
+     2    0.01                           _0160_ (net)
+                  0.14    0.00    2.46 v _0479_/B (sky130_fd_sc_hd__nor2_2)
+                  0.25    0.25    2.71 ^ _0479_/Y (sky130_fd_sc_hd__nor2_2)
+     3    0.01                           _0161_ (net)
+                  0.25    0.00    2.71 ^ _0480_/A (sky130_fd_sc_hd__buf_1)
+                  0.70    0.67    3.38 ^ _0480_/X (sky130_fd_sc_hd__buf_1)
+    10    0.04                           transceiver.tx_wr (net)
+                  0.70    0.00    3.38 ^ _0962_/S (sky130_fd_sc_hd__mux2_1)
+                  0.13    0.90    4.28 v _0962_/X (sky130_fd_sc_hd__mux2_1)
+     1    0.00                           _0019_ (net)
+                  0.13    0.00    4.28 v _0825_/A (sky130_fd_sc_hd__nor3_2)
+                  0.24    0.33    4.61 ^ _0825_/Y (sky130_fd_sc_hd__nor3_2)
+     1    0.00                           _0428_ (net)
+                  0.24    0.00    4.61 ^ _0827_/A (sky130_fd_sc_hd__nor2_2)
+                  0.05    0.12    4.73 v _0827_/Y (sky130_fd_sc_hd__nor2_2)
+     1    0.00                           _0080_ (net)
+                  0.05    0.00    4.73 v _0986_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  4.73   data arrival time
+
+                  0.00   10.00   10.00   clock sys_clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                                 10.00 ^ _0986_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.29    9.71   library setup time
+                                  9.71   data required time
+-----------------------------------------------------------------------------
+                                  9.71   data required time
+                                 -4.73   data arrival time
+-----------------------------------------------------------------------------
+                                  4.98   slack (MET)
+
+
